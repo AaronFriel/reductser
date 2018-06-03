@@ -5,7 +5,8 @@
         "verify": "tsc --noEmit"
     },
     "dependencies": {
-        "reductser": "^0.0.1",
+        "reductser": "^0.1.0",
         "redux": "^4.0.0"
-    }
+    },
+    "version": "0.1.0"
 }
