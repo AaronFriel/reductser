@@ -1,0 +1,9 @@
+{
+  "lerna": "2.11.0",
+  "packages": [
+    ".",
+    "examples/misc",
+    "examples/react-todos"
+  ],
+  "version": "0.0.0"
+}

@@ -1,0 +1,80 @@
+{
+  "name": "reductser",
+  "version": "0.0.1",
+  "author": {
+    "name": "Aaron Friel",
+    "email": "mayreply@aaronfriel.com"
+  },
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "typings": "./es/index.d.ts",
+  "files": [
+    "lib",
+    "es",
+    "index.d.ts"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AaronFriel/typed-redux-experiments.git"
+  },
+  "scripts": {
+    "prepublish": "npm run clean && npm run build:tsc && npm run build:tsc-modules",
+    "prepublishOnly": "npm run verify",
+    "verify": "lerna run typecheck && lerna run lint && ava -t",
+    "build:babel": "babel --extensions .ts,.tsx ./src --out-dir ./babel && npm run build:babel-declarations",
+    "build:babel-declarations": "tsc -p ./src --emitDeclarationOnly --outDir ./babel",
+    "build:tsc": "tsc -p ./src --outDir ./lib",
+    "build:tsc-modules": "tsc -p ./src --target esnext --module esnext --outDir ./es",
+    "test": "ava",
+    "typecheck": "tsc -p . --noEmit",
+    "lint": "tslint -p .",
+    "clean": "rimraf lib/**/* es/**/*"
+  },
+  "peerDependencies": {
+    "redux": ">=4.0.0",
+    "typescript": ">=2.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/node": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "@babel/preset-typescript": "^7.0.0-beta.49",
+    "@babel/register": "^7.0.0-beta.49",
+    "ava": "^1.0.0-beta.5.1",
+    "ava-check": "^1.0.0-rc.0",
+    "fast-deep-equal": "^2.0.1",
+    "lerna": "^2.11.0",
+    "redux": "^4.0.0",
+    "rimraf": "^2.6.2",
+    "testcheck": "^1.0.0-rc.2",
+    "ts-node": "^6.0.5",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^2.9.1"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.js",
+      "test/**/*.ts"
+    ],
+    "sources": [
+      "src/**/*.ts"
+    ],
+    "compileEnhancements": false,
+    "require": [
+      "./test/helpers/register.js"
+    ],
+    "babel": {
+      "extensions": [
+        "ts",
+        "js"
+      ]
+    }
+  },
+  "testcheck": {
+    "numTests": 250
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "misc",
+    "private": true,
+    "scripts": {
+        "verify": "tsc --noEmit"
+    },
+    "dependencies": {
+        "reductser": "^0.0.1",
+        "redux": "^4.0.0"
+    }
+}

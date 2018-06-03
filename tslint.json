@@ -1,0 +1,21 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-config-airbnb", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "import-name": false,
+    "interface-name": false,
+    "object-literal-sort-keys": false,
+    "interface-over-type-literal": false,
+    "ordered-imports": [
+      true,
+      {
+        "grouped-imports": true
+      }
+    ]
+  },
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": "package.json"
+  }
+}
