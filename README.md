@@ -1,5 +1,7 @@
 # Reductser
 
+[![npm version](https://img.shields.io/npm/v/reductser.svg?style=flat-square)](https://www.npmjs.com/package/reductser)
+
 #### Redux with No Strings Attached
 
 You've read Erik Rasmussen's proposal, [Ducks: Redux Reducer Bundles](https://github.com/erikras/ducks-modular-redux) and Martin Hotell's [Improved Redux type safety with TypeScript 2.8](https://medium.com/@martin_hotell/improved-redux-type-safety-with-typescript-2-8-2c11a8062575), but you're not satisfied? The amount of stringly-typed Redux code leaving a bad taste in your mouth and code smells all over your tests?
@@ -17,6 +19,12 @@ Here's what the the action creator type checking and code completion looks like:
 ![reductser-actions-completion](/docs/reductser-actions-completion.gif)
 
 ## Recipes
+
+Add the reductser library to your project:
+
+```sh
+npm install --save reductser
+```
 
 All of these recipes start with the following import, interface, and function:
 
