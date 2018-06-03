@@ -152,6 +152,8 @@ export default reductser(
 );
 ```
 
+### Tying it all together
+
 The first two recipes produce regular Redux reducers and action creators, but what about this? To use a `reductser` with `combineReducers`, we use a `reductserFactory`. The `actions` key provides scoped action creators for every reductser, and the `reducers` key can be used with `combineReducers`, either as an argument or using the spread operator:
 
 ```ts
