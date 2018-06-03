@@ -2,7 +2,10 @@
 
 [![npm version](https://img.shields.io/npm/v/reductser.svg?style=flat-square)](https://www.npmjs.com/package/reductser)
 
+
 #### Redux with No Strings Attached
+
+#### [API Docs](docs/api.md)
 
 You've read Erik Rasmussen's proposal, [Ducks: Redux Reducer Bundles](https://github.com/erikras/ducks-modular-redux) and Martin Hotell's [Improved Redux type safety with TypeScript 2.8](https://medium.com/@martin_hotell/improved-redux-type-safety-with-typescript-2-8-2c11a8062575), but you're not satisfied? The amount of stringly-typed Redux code leaving a bad taste in your mouth and code smells all over your tests?
 

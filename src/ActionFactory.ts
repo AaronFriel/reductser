@@ -3,9 +3,6 @@ import { HandlerAction, PayloadAction, SimpleAction } from './ActionTypes';
 import { SerializableKey } from './Common';
 
 export type ActionParts = Record<SerializableKey, ActionCreator<any, any, any>>;
-// export interface ActionParts {
-//   [K: string]: ActionCreator<any, any, any>;
-// }
 
 // Type functions for inferring the state of action parts:
 export type StatefulActionDictionary<S> = {
@@ -40,6 +37,20 @@ export type FunctionMap = {
 
 export type ActionUnion<A extends FunctionMap> = ReturnType<A[keyof A]>;
 
+/** 
+ * An object whose values create actions.
+ * 
+ * @typedef ActionFactory
+ */
+
+/**
+ * Fills in the type and reducer parameters on an an object values are
+ * action creators (see: {@link simpleAction}, {@link payloadAction}, {@link handlerAction}.)
+ * 
+ * @param actionParts an object whose values are action creators
+ * @param reducer the scope (and value of the "reducer" key) on all of the actions created by these actions
+ * @returns {ActionFactory}
+ */
 export function actionFactory<A extends ActionParts, R extends SerializableKey>(
   actionParts: A,
   reducer: R,

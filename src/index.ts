@@ -13,6 +13,6 @@ export {
   StatefulActionDictionary,
 } from './ActionFactory';
 
-export { reductser, ReducerCreator } from './Reductser';
+export { reductser, ReductserCreator } from './Reductser';
 
 export { reductserFactory, ReductserFactory, ReducerParts } from './ReductserFactory';
