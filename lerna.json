@@ -3,6 +3,7 @@
   "packages": [
     ".",
     "examples/misc",
+    "examples/misc-js",
     "examples/react-todos"
   ],
   "version": "0.1.0"
