@@ -3,7 +3,6 @@ import {
   ActionUnion,
   handlerAction,
   payloadAction,
-  reductser,
   simpleAction,
 } from 'reductser';
 

@@ -25,7 +25,6 @@ export default function reducer(
         default:
           return action as never;
       }
-      return action.payload;
     default:
       return state;
   }

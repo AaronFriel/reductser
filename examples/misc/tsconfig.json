@@ -2,5 +2,7 @@
   "compilerOptions": {
     "strict": true,
     "lib": ["dom", "es2015", "es2016", "es2017"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
   }
 }

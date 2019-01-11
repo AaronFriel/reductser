@@ -5,12 +5,12 @@ import { SerializableKey } from './Common';
 import { ReductserCreator } from './Reductser';
 
 export type ReducerParts<T> = {
-  [K in keyof T]: T[K] extends ReductserCreator<infer A, infer S, infer R> ? ReductserCreator<A, S, any> : never;
+  [K in keyof T]: T[K] extends ReductserCreator<infer A, infer S, any> ? ReductserCreator<A, S, any> : never;
 }
 
 export type ReductserFactory<R> = {
   actions: {
-    [K in keyof R & SerializableKey]: R[K] extends ReductserCreator<infer A, infer S, any>
+    [K in keyof R & SerializableKey]: R[K] extends ReductserCreator<infer A, any, any>
       ? ActionFactory<A, K>
       : never
   },

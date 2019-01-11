@@ -81,6 +81,7 @@ test('actionFactory assigns types to constructor', t => {
             case ActionType.Payload: {
               // @ts-ignore
               const action = actions[type](payload);
+              // @ts-ignore
               const passed = testPayload(t, action, type, reducer, payload);
               if (!passed) return false;
               break;
@@ -88,6 +89,7 @@ test('actionFactory assigns types to constructor', t => {
             case ActionType.Handler: {
               // @ts-ignore
               const action = actions[type](payload);
+              // @ts-ignore
               const passed = testHandler(t, action, type, reducer, payload, state);
               if (!passed) return false;
               break;

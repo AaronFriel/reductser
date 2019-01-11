@@ -1,10 +1,6 @@
 import {
-  actionFactory,
-  ActionUnion,
   handlerAction,
   reductser,
-  ReductserFactory,
-  reductserFactory,
 } from 'reductser';
 
 export interface CounterState {

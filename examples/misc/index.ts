@@ -1,7 +1,5 @@
-
-import { combineReducers } from 'redux';
-
 import { reductserFactory } from 'reductser';
+import { combineReducers } from 'redux';
 
 import { counter } from './counter-reducer';
 import location from './location';
