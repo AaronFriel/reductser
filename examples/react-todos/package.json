@@ -1,6 +1,6 @@
 {
   "name": "react-todos",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@types/react-redux": "^6.0.0",
@@ -8,7 +8,7 @@
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
     "react-scripts-ts": "2.16.0",
-    "reductser": "^0.1.0",
+    "reductser": "^0.2.0",
     "redux": "^4.0.0"
   },
   "scripts": {
