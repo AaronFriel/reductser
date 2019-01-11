@@ -48,7 +48,7 @@
     "fast-deep-equal": "^2.0.1",
     "jsdoc": "^3.5.5",
     "jsdoc-to-markdown": "^4.0.1",
-    "lerna": "^2.11.0",
+    "lerna": "^3.10.5",
     "redux": "^4.0.0",
     "rimraf": "^2.6.2",
     "testcheck": "^1.0.0-rc.2",
