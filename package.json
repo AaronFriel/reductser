@@ -19,7 +19,7 @@
     "url": "git@github.com:AaronFriel/typed-redux-experiments.git"
   },
   "scripts": {
-    "prepublish": "npm run clean && npm run build:tsc && npm run build:tsc-modules",
+    "prepare": "npm run clean && npm run build:tsc && npm run build:tsc-modules",
     "prepublishOnly": "npm run verify",
     "lerna": "lerna",
     "verify": "lerna run typecheck && lerna run lint && ava -t",
